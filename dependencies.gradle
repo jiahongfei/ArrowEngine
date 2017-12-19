@@ -1,0 +1,85 @@
+ext.change = [
+        code: 1,
+        name: '1.0.0',
+]
+
+ext.versions = [
+
+        minSdk                  : 14,
+        targetSdk               : 22,
+        compileSdk              : 25,
+        buildTools              : '25.0.2',
+
+        applicationId           : "com.andrjhf.arrow.demo",
+
+        androidGradlePlugin     : '2.3.3',
+
+        supportLibs             : '25.3.0',
+
+        dagger                  : '2.7',
+
+        okHttp3                 : '3.8.0',
+
+        retrofit                : '2.3.0',
+        retrofitConverterGson   : '2.1.0',
+        retrofitRxjava2Adapter  : '1.0.0',
+        retrofitConverterScalars: '2.0.0',
+
+        rxAndroid               : '2.0.1',
+        rxJava2                 : '2.1.0',
+
+        rxCache                 : '1.8.1-2.x',
+        rxCacheGson             : '0.0.3',
+
+        junit                   : '4.12',
+
+        fastJson                : '1.1.55.android',
+
+        javaxAnnotation         : '1.0',
+
+        butterKnife             : '8.8.1',
+
+        junit                   : '4.12',
+
+        leakcanary              : '1.5.4',
+
+]
+
+ext.gradlePlugins = [
+        android: "com.android.tools.build:gradle:$versions.androidGradlePlugin",
+]
+
+ext.libraries = [
+
+        supportAppCompat         : "com.android.support:appcompat-v7:$versions.supportLibs",
+
+        dagger                   : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler           : "com.google.dagger:dagger-compiler:$versions.dagger",
+
+        okHttp3                  : "com.squareup.okhttp3:okhttp:$versions.okHttp3",
+        okHttp3LoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp3",
+
+        retrofit                 : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitConverterGson    : "com.squareup.retrofit2:converter-gson:$versions.retrofitConverterGson",
+        retrofitRxjava2Adapter   : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$versions.retrofitRxjava2Adapter",
+        retrofitConverterScalars : "com.squareup.retrofit2:converter-scalars:$versions.retrofitConverterScalars",
+
+        rxCache                  : "com.github.VictorAlbertos.RxCache:runtime:$versions.rxCache",
+        rxCacheGson              : "com.github.VictorAlbertos.Jolyglot:gson:$versions.rxCacheGson",
+
+        rxJava2                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava2",
+        rxAndroid                : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+
+        fastJson                 : "com.alibaba:fastjson:$versions.fastJson",
+
+        javaxAnnotation          : "javax.annotation:jsr250-api:$versions.javaxAnnotation",
+
+        butterKnife              : "com.jakewharton:butterknife:$versions.butterKnife",
+        butterKnifeCompiler      : "com.jakewharton:butterknife-compiler:$versions.butterKnife",
+        butterKnifePlugin        : "com.jakewharton:butterknife-gradle-plugin:$versions.butterKnife",
+
+        junit                    : "junit:junit:$versions.junit",
+
+        debugLeakcanary          : "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary",
+        releaseLeakcanary        : "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakcanary"
+]
