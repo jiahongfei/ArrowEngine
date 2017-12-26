@@ -121,14 +121,9 @@ public class AppDelegateConfig {
         private IHttpErrorHandler iHttpErrorHandler;
         private IHttpResponseHandler iHttpResponseHandler;
 
-        public Builder setBaseUrl(String baseUrl) {
+        public Builder(String baseUrl, File cacheDir){
             this.baseUrl = baseUrl;
-            return this;
-        }
-
-        public Builder setCacheDir(File cacheDir) {
             this.cacheDir = cacheDir;
-            return this;
         }
 
         public Builder setRetrofitConfig(RetrofitConfig retrofitConfig) {

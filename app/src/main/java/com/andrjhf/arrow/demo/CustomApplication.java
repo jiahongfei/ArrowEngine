@@ -39,9 +39,7 @@ public class CustomApplication extends Application implements IApp {
         instance = this;
 
         AppDelegateConfig appDelegateConfig = new AppDelegateConfig
-                .Builder()
-                .setBaseUrl("http://www.weather.com.cn/adat/sk/")
-                .setCacheDir(getCacheDir())
+                .Builder("http://www.weather.com.cn/adat/sk/", getCacheDir())
                 .setOkhttpConfig(new DataRepositoryModule.OkhttpConfig() {
                     @Override
                     public void configOkhttp(Application context, OkHttpClient.Builder builder) {
